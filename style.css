@@ -212,7 +212,7 @@ body {
 .create__right-abstraction1_active {
   top: 50%;
   left: -50%;
-  
+
 }
 
 .create__right-abstraction2 {
@@ -1258,7 +1258,7 @@ h2 {
 }
 
 .creator {
-  padding-top: 100px;
+  /* padding-top: 100px; */
 }
 
 .creator__title {
@@ -1347,3 +1347,170 @@ h2 {
 .minicard__right-number {
   color: #888888;
 }
+
+.history {
+  position: relative;
+  margin-top: 30px;
+
+}
+
+.history__container {}
+
+.history__schedule {
+  width: 80%;
+}
+
+.history__window {
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 82%;
+  right: 5%;
+  width: 25%;
+  box-shadow: 17px 17px 60px #0000001F;
+  border-radius: 16px;
+}
+
+.history__window-header {
+  margin: 36px 0px 0px 28px;
+}
+
+.history__window-header__text {
+  font-weight: 600;
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.history__window-header__data {
+  color: #888888;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.history__window-main {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.history__window-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  box-shadow: -4px 9px 15px 0 #10101026;
+  border-radius: 9px;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+
+.history__window-row__left {
+  display: flex;
+}
+
+
+.history__window-img {
+  position: relative;
+  width: 46px;
+  height: 46px;
+}
+
+.history__window-checked {
+  position: absolute;
+  left: 16%;
+  ;
+}
+
+.history__window-text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.history__window__text-name {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 19px;
+}
+
+.history__window__text-date {
+  color: #9C9C9C;
+  font-size: 11px;
+  line-height: 13px;
+}
+
+.history__window-row__right {
+  margin-right: 35px;
+  padding-top: 10px;
+}
+
+
+.history__window-row__right-ETH__price {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.history__window-buy {
+  margin: 20px 0;
+}
+
+.history__window-buy__text {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  padding-left: 5px;
+}
+
+.history__window-buy__area {
+  border: 1px solid #000;
+  border-radius: 15px;
+
+}
+
+.history__window-buttonbid {
+  width: 40%;
+  text-align: center;
+  padding-left: 40px;
+  border-right: 20px solid #000;
+  border-radius: 14px;
+}
+
+.history__window-buttonbuy {
+  padding: 15px;
+  padding-left: 35%;
+  gap: 10px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  border-radius: 14px;
+}
+
+.history__window.active {
+  position: fixed;
+  width: 26%;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition-duration: 700ms;
+  border: 2px solid #000;
+  transition-duration: 200ms;
+}
+
+
+.fixed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000; 
+}
+
+
+.blur {
+  filter: blur(5px);
+  transition: filter 0.3s ease;
+}
+
+
