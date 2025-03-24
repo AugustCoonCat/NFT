@@ -23,6 +23,12 @@
   font-size: 14px;
 }
 
+a {
+  color: black;
+  text-decoration: none;
+
+}
+
 .container {
   max-width: 1300px;
   margin: 0 auto;
@@ -151,7 +157,7 @@ body {
   top: 5%;
   width: 60%;
   height: 1px;
-  background-color: gray;
+  background-color: #D0D0D0;
 }
 
 .create__left-subtitle,
@@ -326,6 +332,12 @@ body {
   font-weight: 600;
   font-size: 21px;
   padding-bottom: 7px;
+}
+
+.card__namea {
+  font-weight: 600;
+  font-size: 21px;
+  text-decoration: none;
 }
 
 .card__bid {
@@ -1087,7 +1099,7 @@ h2 {
 
 .discover__container {
   padding-top: 10%;
-  width: 80%;
+  width: 85%;
 }
 
 .discover__filters {
@@ -1095,14 +1107,13 @@ h2 {
   justify-content: space-around;
   margin: 0 auto;
   width: 40%;
-  justify-content: center;
   padding-top: 50px;
 }
 
 .discover__main {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 40px;
+  row-gap: 60px;
   justify-content: space-between;
   padding-top: 100px;
 }
@@ -1199,16 +1210,15 @@ h2 {
   line-height: 40px;
 }
 
-.detail__avatar-owner {
+.detail__avatar-owner,
+.detail__right-info {
   display: flex;
   align-items: center;
 }
 
 .detail__right-info {
   margin-top: 65px;
-  display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .detail__info-price,
@@ -1234,13 +1244,11 @@ h2 {
 .detail__ETH-price {
   font-weight: 600;
   font-size: 32px;
-
   color: #000;
 }
 
 .detail__info-data__text {
-  padding-left: 140px;
-  padding-bottom: 5px;
+  padding: 0 0 5px 140px;
 }
 
 .detail__info-data__time {
@@ -1255,10 +1263,6 @@ h2 {
   gap: 10px;
   font-weight: 700;
   text-transform: capitalize;
-}
-
-.creator {
-  /* padding-top: 100px; */
 }
 
 .creator__title {
@@ -1351,10 +1355,7 @@ h2 {
 .history {
   position: relative;
   margin-top: 30px;
-
 }
-
-.history__container {}
 
 .history__schedule {
   width: 80%;
@@ -1363,7 +1364,7 @@ h2 {
 .history__window {
   background-color: #FFFFFF;
   position: absolute;
-  top: 82%;
+  top: 101%;
   right: 5%;
   width: 25%;
   box-shadow: 17px 17px 60px #0000001F;
@@ -1416,7 +1417,7 @@ h2 {
 
 .history__window-checked {
   position: absolute;
-  left: 16%;
+  left: 18%;
   ;
 }
 
@@ -1483,34 +1484,136 @@ h2 {
   border-radius: 14px;
 }
 
-.history__window.active {
-  position: fixed;
-  width: 26%;
-  top: 50%;
-  left: 50%;
-  z-index: 100;
-  transform: translate(-50%, -50%);
-  background: white;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition-duration: 700ms;
-  border: 2px solid #000;
-  transition-duration: 200ms;
-}
-
-
 .fixed {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1000; 
+  z-index: 500;
+  transition-duration: 500ms;
 }
-
 
 .blur {
   filter: blur(5px);
   transition: filter 0.3s ease;
 }
 
+header,
+footer {
+  position: relative;
+  z-index: 1001;
+  filter: none;
+}
 
+.profile__container {
+  width: 100%;
+}
+
+.profile__cover {
+  margin-top: 100px;
+}
+
+.profile__info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 25%;
+  margin: 70px 0 0 80px;
+}
+
+.profile__info-photo {
+  position: absolute;
+  bottom: 110%;
+  left: 5%;
+}
+
+.profile__info-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile__info-row__left::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 18%;
+  width: 100%;
+  height: 1px;
+  background-color: #D0D0D0;
+}
+
+.profile__info-name {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 130%;
+  color: #010101;
+}
+
+.profile__info-nickname {
+  font-size: 18px;
+  color: #93989A;
+  line-height: 130%;
+}
+
+.profile__button {
+  line-height: 100%;
+  width: 110%;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.profile__info-result {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+  padding-top: 30px;
+}
+
+.profile__info-result__item {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.profile__info-result__text {
+  font-family: "Inter", serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  color: #848586;
+}
+
+.profile__info-bio {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.profile__info-bio__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 40px;
+  color: #C5C5C5;
+}
+
+.profile__info-bio__text {
+  color: #949494;
+  padding-bottom: 80px;
+}
+
+.profile__info-bio__text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 1px;
+  background-color: #D0D0D0;
+}
+
+.profile__info-link {
+  gap: 60px;
+  display: flex;
+}
