@@ -290,16 +290,17 @@ body {
   display: flex;
   position: absolute;
   left: -2%;
-  gap: 60px;
+  gap: 70px;
 }
 
 .card {
   display: grid;
-  grid-template-rows: 1fr auto;
+  grid-template-rows: 1fr 0.5fr;
   background-color: white;
   border-radius: 10%;
   box-shadow: 2px 2px 20px 1px rgba(0, 0, 0, 0.5);
-  width: 270px;
+  width: 100%;
+  max-width: 270px;
   padding-top: 5px;
 }
 
@@ -309,10 +310,7 @@ body {
   align-items: center;
 }
 
-.card__img {
-  width: 252px;
-  height: 252px;
-}
+
 
 .card__bot {
   display: grid;
@@ -332,6 +330,7 @@ body {
   font-weight: 600;
   font-size: 21px;
   padding-bottom: 7px;
+  width: 120%;
 }
 
 .card__namea {
@@ -361,11 +360,15 @@ body {
 }
 
 .card__img {
+  width: 100%;
+  height: 100%;
   border-radius: 10%;
-  border: 10px solid #0000;
+  padding: 10px;
 }
 
 .card__button {
+  width: auto;
+  height: auto;
   margin-top: 40%;
   padding: 10px 10px;
 }
@@ -376,7 +379,7 @@ body {
   line-height: 150%;
 }
 
-.profitperc {
+d .profitperc {
   color: #10C352;
 }
 
@@ -983,7 +986,7 @@ h2 {
 }
 
 .sell__container {
-  margin-top: 150px;
+  margin: 150px auto;
   background-color: #141416;
   border-radius: 25px;
   display: flex;
@@ -1034,7 +1037,6 @@ h2 {
 }
 
 .footer__header {
-  margin-top: 50px;
   padding-top: 50px;
   display: flex;
   justify-content: space-between;
@@ -1126,7 +1128,7 @@ h2 {
 .loading-img {
   display: flex;
   justify-content: center;
-  margin: 175px auto;
+  margin: 170px  auto;
 }
 
 .detail__row {
@@ -1278,7 +1280,7 @@ h2 {
 .creator__container {
   padding-top: 40px;
   display: flex;
-  gap: 50px;
+  justify-content: space-between;
 }
 
 .minicard {
@@ -1364,7 +1366,7 @@ h2 {
 .history__window {
   background-color: #FFFFFF;
   position: absolute;
-  top: 101%;
+  top: 9%;
   right: 5%;
   width: 25%;
   box-shadow: 17px 17px 60px #0000001F;
@@ -1472,7 +1474,9 @@ h2 {
   text-align: center;
   padding-left: 40px;
   border-right: 20px solid #000;
-  border-radius: 14px;
+
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .history__window-buttonbuy {
@@ -1509,6 +1513,11 @@ footer {
   width: 100%;
 }
 
+.profile__main {
+  display: flex;
+  justify-content: space-between;
+}
+
 .profile__cover {
   margin-top: 100px;
 }
@@ -1537,7 +1546,7 @@ footer {
   content: "";
   position: absolute;
   left: 0;
-  top: 18%;
+  top: 10%;
   width: 100%;
   height: 1px;
   background-color: #D0D0D0;
@@ -1616,4 +1625,117 @@ footer {
 .profile__info-link {
   gap: 60px;
   display: flex;
+}
+
+.profile__collection-main {
+  margin-top:  85px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 25px ;
+}
+
+.profile__collection-main .card {
+  width: 28%;
+  height: 25%;
+}
+.profile__collection-main .card__name {
+ font-size: 15px;padding: 0;
+}
+.profile__collection-main .card__namea {
+  font-size: 15px;white-space: nowrap;
+ }
+.profile__collection-main .card__bid {
+  font-size: 10px;
+ }
+ 
+.profile__collection-main .card__button {
+  font-size:9px ;
+}
+.profile__collection-main .loading-img {
+  padding: 0;
+ }
+ .profile__collection-main .card__ETH-price {
+  font-size: 11px;
+ }
+.profile__slide {
+  width: 50%;
+  margin-right: 50px;
+}
+
+.profile__slide-tabs {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+.profile__slide-tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  color: gray;
+  position: relative;
+}
+
+.profile__slide-tab.active {
+  color: black;
+  font-weight: bold;
+}
+
+.profile__slide-tab.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 3px;
+  background: black;
+}
+
+.content {
+  margin-top: 50px;
+}
+
+.collection,
+.activity {
+  display: none;
+}
+
+.collection .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.collection .grid div,
+.activity .buttons button,
+.activity .row {
+  background: #ddd;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.activity .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.activity .buttons button {
+  width: 40%;
+  padding: 10px;
+}
+
+.activity .row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.activity .row div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #bbb;
+  margin-right: 10px;
 }
