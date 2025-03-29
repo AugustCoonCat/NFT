@@ -19,16 +19,23 @@
                         <ul class="header__nav">
                             <li class="header__nav-item"><a class="header__nav-link" href="./discover.html">Discover</a>
                             </li>
-                            <li class="header__nav-item"> <a class="header__nav-link" href="./profile.html">Creators</a>
+                            <li class="header__nav-item"> <a class="header__nav-link" href="./creators.html">Creators</a>
                             </li>
-                            <li class="header__nav-item">Sell</li>
-                            <li class="header__nav-item">Stats</li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="./create.html">Sell</a>
+                            </li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="./stats.html">Stats</a>
+                            </li>
                         </ul>
                     </div>
                     <div class="header__right">
-                        <input type="search_box" class="search_box"
-                            placeholder="  &#128269; Search Art Work / Creator" />
-                        <button class="header__button button blackbutton">Connect wallet</button>
+                        <div class="search"> <input type="search_box" class="search_box"
+                                placeholder="Search Art Work / Creator" /> <svg class="search-icon"
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.099zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg></div>
+                        <a href="./wallet.html"><button class="header__button button blackbutton">Connect wallet</button></a>
                     </div>
                 </div>
             </header>
@@ -144,8 +151,7 @@
                                 <button class="button blackbutton history__window-buttonbuy"> <img
                                         src="./img/icons/wallet.svg" alt="image">Submit</button>
                             </div>
-                        </div>
-
+                        </div><div class="overlay"></div>
                     </div>
                 </div>
                 <div class="creator">

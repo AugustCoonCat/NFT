@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./nonstyle.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="body__background">
+        <main>
+            <header class="header">
+                <div class="header__container container">
+                    <div class="header__left ">
+                        <a href="./index.html"><img src="./img//icons/Logo.svg" alt="image" class="logo" /></a>
+                        <ul class="header__nav">
+                            <li class="header__nav-item"><a class="header__nav-link" href="./discover.html">Discover</a>
+                            </li>
+                            <li class="header__nav-item"> <a class="header__nav-link" href="./creators.html">Creators</a>
+                            </li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="./create.html">Sell</a>
+                            </li>
+                            <li class="header__nav-item"><a class="header__nav-link" href="./stats.html">Stats</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__right">
+                        <div class="search"> <input type="search_box" class="search_box"
+                                placeholder="Search Art Work / Creator" /> <svg class="search-icon"
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray"
+                                viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.099zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg></div>
+                        <a href="./wallet.html"><button class="header__button button blackbutton">Connect wallet</button></a> 
+                    </div>
+                </div>
+            </header>
+            <div class="create__container container">
+                <h2>Create Your NFT</h2>
+                <div class="create__main ">
+                    <div class="create__main-left">
+                        <div class="create__info">
+                            <div class="create__info-row">
+                                <div class="create__info-form">
+                                    <div class="form__title">Name</div>
+                                    <div class="form__input-wrapper">
+                                        <input type="text" class="form__input" placeholder="ArtWork Name">
+                                        <img src="./img/icons/input.svg" alt="Edit" class="form__icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="create__info-row">
+                                <div class="create__info-form">
+                                    <div class="form__title">Description</div>
+                                    <div class="form__input-wrapper">
+                                        <textarea class="form__input" placeholder="Enter Your Description"></textarea>
+                                        <img src="./img/icons/input.svg" alt="Edit" class="form__icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="create__info-row create__info-select">
+                                <div class="create__info-form">
+                                    <div class="form__title">Royalty</div>
+                                    <select class="form__select">
+                                        <option disabled selected>Royalty</option>
+                                        <option value="royalty">10%</option>
+                                        <option value="castle">15%</option>
+                                    </select>
+                                </div>
+                                <div class="create__info-form">
+                                    <div class="form__title">Size</div>
+                                    <div class="form__input-wrapper">
+                                        <input type="text" class="form__input" placeholder="Ex - 100 x 100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="create__info-row">
+                                <div class="create__info-form">
+                                    <div class="form__title">Tags</div>
+                                    <div class="form__input-wrapper">
+                                        <input type="text" class="form__input"
+                                            placeholder="Beautiful Castle, Monkeys ETC">
+                                        <img src="./img/icons/input.svg" alt="Edit" class="form__icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="create__info-row create__info-select">
+                                <div class="create__info-form">
+                                    <div class="form__title">Price</div>
+                                    <div class="form__input-wrapper price-wrapper">
+                                        <select class="form__select currency-select">
+                                            <option disabled selected>ETH</option>
+                                            <option value="btc">BTC</option>
+                                            <option value="usd">USD</option>
+                                        </select>
+                                        <input type="text" class="form__input price-input" placeholder="0.00007 ETC">
+                                    </div>
+                                </div>
+                                <div class="create__info-form">
+                                    <div class="form__title">In Stock</div>
+                                    <div class="create__info-select">
+                                        <select class="form__select">
+                                            <option disabled selected>001</option>
+                                            <option value="yes">002</option>
+                                            <option value="no">008</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="create__info-text">
+                                <div class="create__info-text__left">
+                                    <p class="create__info-title">Put On Sale</p>
+                                    <p class="create__info-description">People Will Bids On Your NFT Project</p>
+                                </div>
+                                <div class="create__info-text__right"> <label class="checkbox-ios">
+                                        <input type="checkbox" checked>
+                                        <span class="checkbox-ios-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="create__info-text">
+                                <div class="create__info-text__left">
+                                    <p class="create__info-title">Direct Sale</p>
+                                    <p class="create__info-description">No Bids - Only Direct Salling</p>
+                                </div>
+
+                                <div class="create__info-text__right"> <label class="checkbox-ios">
+                                        <input type="checkbox">
+                                        <span class="checkbox-ios-switch"></span>
+                                    </label>
+
+                                </div>
+                            </div>
+                            <button class="button blackbutton create__info-button"> Create </button>
+                        </div>
+                    </div>
+                    <div class="create__main-right"> <img src="./img/create/Input_form.png" alt="image" class="create-img">
+                        <button class="button blackbutton upload__button">Upload</button>
+                    </div>      
+                </div>
+            </div>   
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__header">
+                    <div class="footer__header-left">
+                        <div class="logo__white"> <img src="./img/icons/Logo__white.svg" alt="image"
+                                class="logo__white-img"><span class="org__name">DiveSea</span>
+                        </div>
+                    </div>
+
+                    <div class="footer__header-right">
+                        <ul class="footer__menu">
+                            <li class="footer__menu-item">Privacy Policy</li>
+                            <li class="footer__menu-item">Term & Conditions</li>
+                            <li class="footer__menu-item">About Us</li>
+                            <li class="footer__menu-item">Contact</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__contacts">
+                    <div class="footer__contacts-left">© 2023 EATLY All Rights Reserved.</div>
+                    <div class="footer__contacts-right">
+                        <img src="./img/icons/instagram_icon.svg" alt="image" class="footer__contacts-logo">
+                        <img src="./img/icons/linked_icon.svg" alt="image" class="footer__contacts-logo">
+                        <img src="./img/icons/facebook_icon.svg" alt="image" class="footer__contacts-logo">
+                        <img src="./img/icons/twitter_icon.svg" alt="image" class="footer__contacts-logo">
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

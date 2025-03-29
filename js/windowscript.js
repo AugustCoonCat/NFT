@@ -8,7 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
   submitButton.addEventListener("click", function () {
     if (!isFixed) {
       historyWindow.classList.add("fixed");
-      mainContent.classList.add("blur");
       const newRow = document.createElement("div");
       newRow.classList.add("history__window-row");
       newRow.innerHTML = `
@@ -40,13 +39,30 @@ document.addEventListener("DOMContentLoaded", function () {
       newRowElement = newRow;
     } else {
       historyWindow.classList.remove("fixed");
-      mainContent.classList.remove("blur");
-
       if (newRowElement) {
         newRowElement.remove();
         newRowElement = null;
       }
     }
     isFixed = !isFixed;
+  });
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const submitButton = document.querySelector(".history__window-buttonbuy");
+  const historyWindow = document.querySelector(".history__window");
+  const overlay = document.querySelector(".overlay");
+  let newRowElement = null;
+
+  submitButton.addEventListener("click", function () {
+    if (overlay.style.display === "none" || overlay.style.display === "") {
+      overlay.style.display = "block"; 
+    } else {
+      overlay.style.display = "none"; 
+    }
+  });
+
+
+  overlay.addEventListener("click", function () {
+    overlay.style.display = "none";
   });
 });

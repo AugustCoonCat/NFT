@@ -1,7 +1,28 @@
 function switchTab(tab) {
-    document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
-    document.querySelectorAll('.collection, .activity').forEach(el => el.style.display = 'none');
+    const tabs = document.querySelectorAll('.profile__slide-tab');
     
-    document.querySelector('.' + tab).style.display = 'block';
-    document.querySelector(`[onclick="switchTab('${tab}')"]`).classList.add('active');
+
+    tabs.forEach(el => {
+        el.classList.remove('active');
+    });
+    
+ 
+    document.querySelectorAll('.profile__slide-collection, .profile__slide-activity').forEach(el => {
+        el.style.display = 'none';
+    });
+    
+ 
+    const activeTab = document.querySelector('.' + tab);
+    activeTab.style.display = 'block';
+    
+   
+    const activeButton = document.querySelector(`[onclick="switchTab('${tab}')"]`);
+    activeButton.classList.add('active');
 }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const activeButton = document.querySelector('.profile__slide-tab.active');
+    const activeTab = document.querySelector('.profile__slide-collection'); 
+    activeTab.style.display = 'block';
+});
