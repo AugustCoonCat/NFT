@@ -17,6 +17,7 @@
         <div class="header__container container">
           <div class="header__left ">
             <a href="./index.html"><img src="./img//icons/Logo.svg" alt="image" class="logo" /></a>
+            <p class="orgname">DiveSea</p>
             <ul class="header__nav">
               <li class="header__nav-item"><a class="header__nav-link" href="./discover.html">Discover</a></li>
               <li class="header__nav-item"> <a class="header__nav-link" href="./creators.html">Creators</a>
@@ -28,22 +29,36 @@
             </ul>
           </div>
           <div class="header__right">
-            <div class="search"> <input type="search_box" class="search_box" placeholder="Search Art Work / Creator" />
-              <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray"
+            <div class="search"> <input type="search_box" class="search_box" placeholder="Search Art Work/Creator" />
+              <!-- <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gray"
                 viewBox="0 0 16 16">
                 <path
                   d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.099zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-              </svg>
+              </svg> -->
             </div>
-            <a href="./wallet.html"><button class="header__button button blackbutton">Connect wallet</button></a>
+            <a href="./wallet.html"><button class=" button blackbutton header__button">Connect wallet</button></a>
+            <div class="burger-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
+        <nav class="mobile-nav">
+          <ul>
+            <li><a href="./discover.html">Discover</a></li>
+            <li><a href="./creators.html">Creators</a></li>
+            <li><a href="./create.html">Sell</a></li>
+            <li><a href="./stats.html">Stats</a></li>
+            <li><a href="./wallet.html"><button class="button blackbutton">Connect Wallet</button></a></li>
+          </ul>
+        </nav>
       </header>
       <div class="features">
         <div class="features__main">
           <div class="features__container container">
             <div class="features__left">
-              <div class="features__left-title">Discover And Create NFTs</div>
+              <div class="features__left-title">Discover And <br> Create NFTs</div>
               <div class="features__left-subtitle">Discover, Create and Sell NFTs On Our NFT Marketplace <br> With Over
                 Thousands
                 Of
@@ -69,14 +84,16 @@
             </div>
             <div class="features__right">
               <img src="./img/features/Abstraction1.png" id="abstraction1" alt="image"
-                class="features__right-abstraction1 abstraction">
-              <img src="./img/features/Abstraction2.png" alt="image" class="features__right-abstraction2 abstraction">
+                class="features__right-abstraction1 abstraction1 abstraction">
+              <img src="./img/features/Abstraction2.png " id="abstraction2 " alt="image"
+                class="features__right-abstraction2 abstraction2 abstraction ">
               <img src="./img/features/Arrow 01.png" alt="image" class="features__right-arrow">
               <img src="./img/features/Dot Ornament.png" alt="image" class="features__right-dot">
+              <button id="features__navigation" class="features__navigation"><img src="./img/icons/Frame 13.png" alt="image"
+                class="navigation"></button>
             </div>
           </div>
-          <button id="features__navigation" class="features__navigation"><img src="./img/icons/Frame 13.png" alt="image"
-              class="navigation"></button>
+         
         </div>
       </div>
       <div class="top">
@@ -174,7 +191,7 @@
               </div>
             </div>
           </div>
-          <div class="top__navigationbtn "> <button  class="top__navigation" class="navigation"><img
+          <div class="top__navigationbtn "> <button class="top__navigation" class="navigation"><img
                 src="./img/icons/Frame 13.png" alt="image"></button></div>
 
           <div class="top__viewed viewed">
